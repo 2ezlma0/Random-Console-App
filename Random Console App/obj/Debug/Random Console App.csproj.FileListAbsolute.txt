@@ -1,8 +1,0 @@
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\bin\Debug\Random Console App.exe.config
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\bin\Debug\Random Console App.exe
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\bin\Debug\Random Console App.pdb
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\obj\Debug\Random Console App.csproj.AssemblyReference.cache
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\obj\Debug\Random Console App.csproj.SuggestedBindingRedirects.cache
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\obj\Debug\Random Console App.csproj.CoreCompileInputs.cache
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\obj\Debug\Random Console App.exe
-C:\Users\jjohn\Documents\VSC Projects\Random Console App\Random Console App\obj\Debug\Random Console App.pdb
