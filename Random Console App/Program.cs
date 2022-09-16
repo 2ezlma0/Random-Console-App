@@ -833,12 +833,12 @@ namespace Random_Console_App
                 Console.WriteLine("Starting character and/or ending character isnt a number, please enter a valid equation");
                 equation = Console.ReadLine();
             }
-            int answer = EquationSolver(equation);
+            double answer = EquationSolver(equation);
             Console.WriteLine("\n" + Convert.ToString(answer));
             Console.Read();
         }
 
-        public static int EquationSolver(string equation)
+        public static double EquationSolver(string equation)
         {
             List<int> numbers = new List<int>(); //list to store the numbers in the equation
             List<int> symbols = new List<int>(); //list to store the symbols in the equation, stored in BIDMAS order (4 is /, 3 is *, 2 is +, 1 is -)
@@ -906,8 +906,8 @@ namespace Random_Console_App
                 }
             }
 
-            int answer = 0;
-            int tempAnswer = 0;
+            double answer = 0;
+            double tempAnswer = 0;
             bool firstRun = false;
             int tempOrder = -1;
             bool different = false;
